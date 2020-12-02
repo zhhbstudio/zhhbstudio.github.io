@@ -1,8 +1,8 @@
 ---
 title: 创建我的博客
 date: 2020-12-01 21:30:00 +0800
-categories: [博客, Docker]
-tags: [博客]
+categories: [blog, docker]
+tags: [jekyll,blog]
 ---
 
 # 创建我的博客
@@ -13,7 +13,7 @@ tags: [博客]
 
 ## 为什么选择 Jekyll
 
-一个 [朋友](https://www.liyue.site/) 用的这个，并且 Github 只支持这个动态框架，这样就不需要打包后再提交到 Github，直接推送编辑好的 Markdown 文件就行了。
+一个 朋友 用的这个，并且 Github 只支持这个动态框架，这样就不需要打包后再提交到 Github，直接推送编辑好的 Markdown 文件就行了。
 
 ## 为什么选择 Chirpy
 
