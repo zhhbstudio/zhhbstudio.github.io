@@ -1,6 +1,6 @@
 ---
 title: go：获取真实的路径
-date: 2020-12-18 21:30:00 +0800
+date: 2020-12-19 21:30:00 +0800
 categories: [go, debug]
 tags: [go]
 ---
