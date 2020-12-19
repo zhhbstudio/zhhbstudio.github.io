@@ -64,7 +64,23 @@ gem install bundler
 ```
 ### 使用主题
 
-下载最新版本代码，我有洁癖，通过 Github 下载的 zip 包。解压后放到容器内 blog 文件夹。然后根据 [指引](https://chirpy.cotes.info/posts/getting-started/) 使用脚本 ```bash tools/init.sh --no-gh``` 初始化。然后通过 ```bundle install``` 安装项目依赖。最后通过 ```bundle exec jekyll s``` 它就在本地 4000 端口跑起来了。
+下载最新版本代码，我有洁癖，通过 Github 下载的 zip 包。解压后放到容器内 blog 文件夹。然后根据 [指引](https://chirpy.cotes.info/posts/getting-started/) 使用脚本 `bash tools/init.sh --no-gh` 初始化。然后通过 `bundle install` 安装项目依赖。最后通过 `bundle exec jekyll s` 它就在本地 4000 端口跑起来了。
+
+
+### 插件
+github pages 仅支持以下插件，所以本博客的 `分类、标签` 不可用
+
+* jekyll-coffeescript
+* jekyll-default-layout
+* jekyll-gist
+* jekyll-github-metadata
+* jekyll-optional-front-matter
+* jekyll-paginate
+* jekyll-readme-index
+* jekyll-titles-from-headings
+* jekyll-relative-links
+
+不过看到 [有人](https://github.com/jinyb09017/jinyb09017.github.io) 的能实现，大概看了一下，还没做。
 
 ### 后续
 
