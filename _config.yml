@@ -4,6 +4,8 @@
 # © 2017-2019 Cotes Chung
 # MIT licensed
 
+port: 8080
+host: localhost
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
