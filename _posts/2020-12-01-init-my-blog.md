@@ -38,8 +38,15 @@ docker exec -it blog bash
 # rvm 安装要用到 which 但是默认 centos 7 镜像不带，所以先安装
 yum install which
 
+# 还依赖一堆 （2021年10月22日）
+yum install -y patch autoconf automake bison bzip2 gcc-c++ libffi-devel libtool make patch readline-devel ruby sqlite-devel zlib-devel glibc-headers glibc-devel openssl-devel
+
+# 安装完清理 yum 缓存 
+yum clean all
+
 # ！下边这句可以先跳过
 # 安装 GPG keys，官网也提供了相应的命令，但是我用了好像没生效，再运行下一句时提醒了用这句
+# 验证服务器好像出问题了 参考 https://github.com/rvm/rvm/issues/5096 （日期）
 gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
 # 安装 rvm，你也可以先运行这句，确认一下上边那个 key 是否变化，我没深入研究
