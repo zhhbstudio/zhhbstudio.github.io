@@ -44,6 +44,10 @@ yum install -y patch autoconf automake bison bzip2 gcc-c++ libffi-devel libtool 
 # 安装完清理 yum 缓存 
 yum clean all
 
+#---#
+# 切换到非 root 用户
+#---#
+
 # ！下边这句可以先跳过
 # 安装 GPG keys，官网也提供了相应的命令，但是我用了好像没生效，再运行下一句时提醒了用这句
 # 验证服务器好像出问题了 参考 https://github.com/rvm/rvm/issues/5096 （日期）
@@ -64,10 +68,17 @@ rvm install ruby-2.7.0
 # 查看 ruby 版本
 ruby -v
 
+# 配置 gem 国内镜像
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+
 # 安装工具
 gem install bundler
 
 # 可根据需要安装 git 等。
+
+# 配置 bundle 国内镜像
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+
 ```
 ### 使用主题
 
