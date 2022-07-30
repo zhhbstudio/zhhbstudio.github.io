@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>HTML5浪漫爱心表白动画在线演示</title>
+
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+<div id="mainDiv">
+    <div id="content">
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    亲爱的，这是我们相爱在一起的时光
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveU">
+                    爱你直到永永远远。<br/>
+                    <div class="signature">- ZHHB</div>
+                </div>
+            </div>
+        </div>
+        <div id="code">
+            <span class="comments">/**</span><br/>
+            <span class="space comments">*2020-05-20,</span><br/>
+            <span class="space comments">*2022-07-30.</span><br/>
+            <span class="comments">*/</span><br/>
+            先预祝大家 <span class="keyword">七夕节</span> 快乐！<br/>
+            从 <span class="keyword">2020年5月20日</span> 录屏发朋友圈之后，<br/>
+            <span class="comments">一直想着， </span><br/>
+            能把页面搞成适配手机的，<br/>
+            <span class="comments">并且能够自动随屏幕旋转。</span><br/>
+            最近，<br/>
+            <span class="comments">终于差不多实现了。</span><br/>
+            <span class="keyword">旋转手机，</span>试试 <span class="keyword">横屏</span> 效果吧。<br/>
+            <span class="placeholder">2022-07-30</span> <br/>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const together = new Date();
+    together.setFullYear(2020, 4, 19);
+    together.setHours(20);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+    startHeartAnimation();
+    $("#code").typewriter();
+
+</script>
+
+</body>
+</html>
